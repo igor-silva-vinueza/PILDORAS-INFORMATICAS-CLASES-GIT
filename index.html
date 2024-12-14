@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento sin titulo</title>
+    <link href="CSS/estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--CLASE 2 GIT-->
+    <!--PARA PONER EL ATAJO DEL HTML, ESCRIBIMOS HTML Y LUEGO LE DAMOS ENTER
+    EN ESTE CASO UTILIZAMOS HTML 5-->
+    <!--ANtes de hacer cambios de nada primero debo usar el comando
+    git config --list para ver en que usuario y en que correo estoy trabajndo de git-->
+    <!--PAra ir al directorio donde tengo los archivos hago click derecho y me voy 
+    a GIT bash here y automaticcamente me abre la consola en esa raiz-->
+    <!--Para inicializar GIT usamos el comando git init-->
+    <!--Para anadir archivos a usarse con GIT usamos el comando git add-->
+    <!--para subir los archivos usamos el comando git commit-->
+    <!--Para verificar los archivos que se han subido a GIT uamos el 
+    comando git status -s y nos los archivos y directorios que estan subidos-->
+    <!--Cuando nos sale ?? con rojo nos indica que no esta haciendo seguimiento 
+    por parte de GIT, soloq ue estan creados-->
+    <!--para ingresar que nos haga seguimiento GIT usamos el comando
+    git add index.html, donde index.html es el archivo que queremos que 
+    nos haga el seguimiento-->
+    <!--LUego de dar el comando add ya no va a aprecer ?? en rojo, si no que
+    va a aparecer la letra A, si anado otro archivo va a aparecer la letra B
+    y se encuentra en el area de ensayo-->
+    <!--Cuando esgta en el area de ensayio para hacer una instantanea
+    usamos el comando commit -m "Comienoz del proyecto"-->
+    <!--Cuando es la primera vez que usamos GIT y le damos git add, nos va a 
+    pedir que pongamos el username y un correo electronico-->
+    <!-- comando ingresar usaurio y correo git config --global user.username "igor-silva-vinueza" -->
+    <!--Y para el correo git config --global user.emal"igor.silva.vinueza@gmail.com-->
+    <!-- LUEGO DE HECHO EL COMMIT EL ARCHIVO DESAPARE DEL STATUS PORQUE YA SE COLOCO EN EL REPOSITORIO-->
+    <h1> HOLA CURSO GIT</h1>
+    <h1>Proyecto Empresarial</h1>
+    <!--Con el comando &acute; entre las palabras se oloca las tildes-->
+    <P> ESTO ES UN P&aacute;RRAFO DE EJEMPLO</P>
+    <!--Se puede poner igual las tildes directamente-->
+    <p> Esto es prueba de párrafo sin accute</p>
+    <!--PAra hacer un respaldo de los cambios, ahi hago nuevamente el git commit -m "Agregado tiutluo"-->
+    <!--Enm este ejemploq ue se coloco le sale que no se hicieron los cambios, 
+    el motivo es porque falto el area de ensayo-->
+    <!--Para preparar el area de ensayo hay que usar el commando git add index.html 
+    luego de este comando ahi se usa el comando commit-->
+    <!-- Para ver todos los cambios realizado usamos el comando git log--oneline-->
+
+<!--EN CASO QUE ME HAYA EQUIVOCADO Y QUIERA REGERESAR A UNA GRABACION ANTERIOR
+DE GIT UTILIZO EL COMANDO git reset --hard (y ponemos el nombre den amarillo que nos
+salio en el listado cuando pusimos el comando git log --oneline)
+
+OJO OJO LA CLASE TERMINA INDICANDO QUE LA COPIA MAS RECIENTE QUE TENIA SE HA PERDIDO
+YA QUE ME CAMBIE A LA ANTERIOR-->
+
+
+
+    <!--PAra tildes y caracteres que siempre salgan observe la pagina https://blog.fidelizador.com/2019/12/17/utf8-n-tildes-y-caracteres-especiales/
+    La utilización de caracteres especiales a lo largo del texto puede convertirse en un dolor de cabeza si se mezclan diferentes codificaciones o si se elige una inadecuada para el idioma a utilizar en el sitio o plantilla html de mailing.
+
+    Para quienes no son expertos en los diferentes tipos de lenguaje de programación, es muy probable que se vean enfrentados a dificultades en el mundo de la informática a la hora de codificar un sitio web o diseño html de correo electrónico. Uno de los problemas más comunes es la aparición de caracteres extraños debido a errores en la codificación.
+    Todo en UTF-8
+
+    Frente al dilema de qué tipo de codificación utilizar en la programación de un sitio web o diseño de email, recomendamos que elijas hacerlo únicamente en UTF-8. Así evitarás que los caracteres especiales sean interpretados de manera diferente por los navegadores, lo cual termina haciendo ilegibles los textos para los usuarios.
+
+    Si de antemano sabes que nunca aparecerán tildes o “eñes” en tu html para el diseño de campañas de mailing o sitio, la codificación no será relevante (aunque podrían haber otros símbolos que sí te ocasionen problemas).
+
+    No obstante, si el contenido de la web o del html del correo está en idioma español, por ejemplo, obligadamente necesitarás usar tildes y eñes a lo largo de los textos. En ese caso, tendrás que estar mucho más atento a la codificación utilizada.
+    Cómo corregir la configuración del sitio
+
+    En el caso de que nuestra web o diseño de plantilla html de mailing contenga demasiado texto, puede ser una tarea titánica el introducir los caracteres especiales manualmente. En ese caso, recomendamos destinar un poco más de recursos y corregir la configuración completa de la página o diseño de mailing.
+
+    Primero, debemos asegurarnos de que nuestro sitio web o diseño de correo esté codificado con las etiquetas META deseadas.
+
+    En el caso de UTF-8: <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+
+    En el caso de ISO-8859-1: <meta http-equiv=”Content-Type” content=”text/html; charset=ISO-8859-1″ />
+    Cómo solucionar el problema de los caracteres especiales
+
+    Cuando se trata de cambios puntuales, el estándar html está preparado para colocar todos los símbolos y tildes que necesitemos, codificándolos de la siguiente forma:
+
+    Para los tildes y eñes, deberíamos colocar:
+
+    á -> &aacute;
+    é -> &eacute;
+    í -> &iacute;
+    ó -> &oacute;
+    ú -> &uacute;
+    ñ -> &ntilde;
+
+    En el caso de tildes abiertas:
+
+    à -> &agrave;
+    è -> &egrave;
+    ò -> &ograve;
+
+De esta forma veremos todos los caracteres especiales correctamente, independiente del charset.
+    
+    
+    -->
+
+<!--CLASE GIT 3-->
+<!--COMANDO git add . permite agregar todos los archivos a git-->
+<!--PARA HACER UN ADD PARA EL COMMIT Y PARA HACER EL COMMIT EN UN SOLO COMANDO
+UTILIZAMOS git commit -am "CLASE 3 GIT PARRAFO Y TAMANO DE FUENTE"-->
+<!--Si tengo correcciones que realizar lo hago con el comando vim desde el editor de git
+el comando es git commit --amend y me abre el editor vim-->
+<!--EN el editor vim borramos el nombre del programa con la tecla delete, las 
+otras teclas no sirven para borrar, luego de eso damos la teclea <esc> y
+    regresamos a edit, al estar listos para editar ponemos :i y escribimos el nuvoe nombre
+    escrito el nuevo nombre damos <enter> y luego <esc> y nos aparece el nuevo nombre en el editor de GIT
+        Para salir del editor VIM ponemos el comando :wq-->
+
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!--INGRESAR TODO LO DE GIT A GITHUB-->
+<!--buscar CREATE REPOSITORY-->
+<!--CREAR EL REPOSITORIO CON UN NUEVO NOMBRE Y ESCOGER PUBLICO O PRIVADO-->
+
+</body>
+</html>
